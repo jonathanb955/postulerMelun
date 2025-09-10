@@ -4,7 +4,10 @@
     require_once __DIR__ . '/config.php';
 
     // Composer autoload pour PHPMailer
-    require_once __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . '/lib/phpmailer/src/PHPMailer.php';
+    require_once __DIR__ . '/lib/phpmailer/src/SMTP.php';
+    require_once __DIR__ . '/lib/phpmailer/src/Exception.php';
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
